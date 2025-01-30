@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KBC Game</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Pontano+Sans:wght@300..700&display=swap');
+
+        body {
+            background: linear-gradient(to bottom, white, rgb(68, 64, 64));
+            color: black;
+            font-family: "Playfair Display", serif;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .container {
+
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px white;
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            color: black;
+            font-size: 3rem;
+            animation: textGlow 1.5s infinite alternate;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+        .start-btn {
+            background: white;
+            color: black;
+            font-size: 1.5rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: transform 0.3s ease-in-out;
+            animation: bounce 1.5s infinite;
+        }
+        .start-btn:hover {
+            background-color: black;
+            color: white;
+            transform: scale(1.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+    
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        } 
+        button a{
+            text-decoration: none;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>कौन बनेगा करोड़पति</h1>
+        <p>Welcome to the ultimate quiz challenge! Test your knowledge and win big prizes.</p>
+        <button class="start-btn" > <a href="loading.html">Start Game</a></button>
+     
+    </div>
+
+<script src="script.js"></script>
+    
+</body>
+</html>

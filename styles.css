@@ -1,0 +1,145 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Pontano+Sans:wght@300..700&display=swap');
+ *{
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  padding: 0;
+ }
+body {
+
+  background: linear-gradient(to bottom, white, rgb(68, 64, 64));
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  height: 90vh;
+  text-align: center;
+  width: 350px;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#question-container {
+  margin-bottom: 20px;
+}
+
+#question {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+#options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.option:hover {
+  background-color: white;
+  color: black;
+}
+
+#timer-container {
+  margin: 20px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: red;
+
+}
+
+#score-container {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+ .winniner{
+  height: 50px;
+  width: 100%;
+  background-color: transparent;
+  color: black;
+
+ }
+ .btns{
+  height: 70px;
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ }
+
+ #start-btn{
+  height:35px;
+  width: 60px;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+
+ }
+ #start-btn:hover{
+  background-color: black;
+  color: white;
+  transition: 1s;
+ }
+
+ #stoptime:hover{
+  background-color: black;
+  color: white;
+
+ }
+ #stoptime{
+  height: 35px;
+  width: 100px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+ }
+
+ #playTimersong:hover{
+  background-color: black;
+  color: white;
+ 
+ }
+ #playTimersong{
+  height: 35px;
+  width: 100px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+ }
+ #finalscore{
+  height: 60px;
+  width: 100%;
+  font-size: 1.2rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ #score{
+  font-weight: bold;
+ }
